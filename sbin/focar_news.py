@@ -45,8 +45,12 @@ def get_news():
             with tag('style'):
                 text('body { background-color: darkblue; color: white; } h1 { color: yellow; }')
         with tag('body'):
-            with tag('img', src='images/car-flags-round-2.gif', alt='Flag of CAR', width='125', height='125'):
-                pass
+            with tag('div', style='display: flex; align-items: center; gap: 10px;'):
+                with tag('img', src='images/car-flags-round-2.gif', alt='Flag of CAR', width='125', height='125'):
+                    pass
+                with tag('span', style='font-size: 24px; font-weight: bold; color: white;'):
+                    text('Friends of C.A.R.')
+
             with tag('h1'):
                 text('Top 20 News Articles on Central African Republic')
             with tag('ol'):
